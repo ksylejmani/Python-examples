@@ -5,10 +5,15 @@ def generate_values():
     yield 'e'
 
 
+def evens_less_than(n):
+    for i in range(2, n, 2):
+        yield i
+
+
 def main():
-    values=generate_values()
-    print(next(values))
-    print(next(values))
+    for i in evens_less_than(12):
+        print(i, end=" ")
+    print()
 
 
 if __name__ == '__main__':
