@@ -10,8 +10,14 @@ def evens_less_than(n):
         yield i
 
 
+def oscillate(a, b):
+    for i in range(a, b,1):
+        yield i
+        yield -i
+
+
 def main():
-    for i in evens_less_than(12):
+    for i in oscillate(-3,5):
         print(i, end=" ")
     print()
 
