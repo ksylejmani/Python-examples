@@ -9,6 +9,9 @@ class lenda:
     def merre_kodin(self):
         return self.kodi
 
+    def dyfishi(self, numri: int):
+        return 2 * numri
+
 
 if __name__ == '__main__':
     lista_kodeve = []
@@ -16,4 +19,5 @@ if __name__ == '__main__':
         lista_kodeve.append(lenda())
     for k in lista_kodeve:
         print(k.merre_kodin(), end=' ')
+        print(k.dyfishi(k.merre_kodin()))
     print()
